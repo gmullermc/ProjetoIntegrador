@@ -61,7 +61,7 @@ public class mainMenu implements ActionListener{
 	
 		panel.setLayout(null);
 		
-		cabecalho = new JLabel("Bem-Vindo(a) ao Sistema de Reclamações da ETE Gil Rodrigues");
+		cabecalho = new JLabel("Bem-Vindo(a) ao Sistema de Reclamaï¿½ï¿½es da ETE Gil Rodrigues");
 		cabecalho.setBounds(200, 20, 500, 25);
 		panel.add(cabecalho);
 					
@@ -73,7 +73,7 @@ public class mainMenu implements ActionListener{
 		nomeTexto.setBounds(100, 60, 165, 25);
 		panel.add(nomeTexto);
 		
-		descProblema = new JLabel("Descrição");
+		descProblema = new JLabel("Descriï¿½ï¿½o");
 		descProblema.setBounds(10, 100, 100, 25);
 		panel.add(descProblema);
 		
@@ -98,7 +98,7 @@ public class mainMenu implements ActionListener{
 		String user = nomeTexto.getText();
 		String prob = textoProblema.getText();
 		System.out.println("Problema: " + user);
-		System.out.println("Descrição do Problema: " + prob);
+		System.out.println("Descriï¿½ï¿½o do Problema: " + prob);
 		try {
 			statement.executeUpdate("INSERT INTO Problemas (nome, problema) VALUES ('"+user+"', '"+prob+"' )");
 			ResultSet rs = statement.executeQuery("SELECT * FROM Problemas");
